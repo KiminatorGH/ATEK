@@ -22,4 +22,18 @@ Approved date: ....
 Revision: ....
 */
 
-#include
+#include "$_SERVER['DOCUMENT_ROOT']/libraries/php/apiUtilitie.php";
+
+$httpCode=200;                                                             // Default code to OK
+// Get userId and userSecret from calling POST //
+$postData=getFromPost(array("userId", "userSecret"));
+if(!$postData->valid)                                                      // Bad request
+  {
+  $httpCode=400;
+  }
+else                                                                       // Got userId and userSecret .. continue
+  {
+  if(validateAuthen(
+  }
+
+
