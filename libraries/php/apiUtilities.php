@@ -18,6 +18,7 @@ Version: 1.0
 
 */
 
+#include "./getFromPost.php";                     // Get data from POST call
 #include "./validateRequiredVars.php";            // Validate require field and their values
 #include "./validateAuthen.php";                  // Validate requesting authentication
 #include "./formatAPIOutput.php";                 // Encode JSON output in compiancy with OpenAI 3.x
