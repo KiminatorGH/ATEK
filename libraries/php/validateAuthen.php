@@ -12,10 +12,10 @@ Version: ....
 Parameters: $userId - string user's ID
             $userSecret = string user's secret
 
-Returns: array(
-              "VALID"=> true | false
-              "TOKEN"=> string of token
-              "EXPIRY"= timestamp of expiry)
+Returns: $obj(
+              valid-> true | false
+              token-> string of token
+              expiry-> timestamp of expiry)
 
 Usage: $res=validateAuthen($useId, $userSecret);
         .....
