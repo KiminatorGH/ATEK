@@ -33,7 +33,13 @@ if(!$postData->valid)                                                      // Ba
   }
 else                                                                       // Got userId and userSecret .. continue
   {
-  if(validateAuthen(
+  if(!validateAuthen($postData->userId, $postData->userSecret)->valid)     // Authen fails ... unauthorized
+     {
+     $httpCode=401;                                                                        
+     }
+  /* This section should contain codes to get data specific to this API
+     ... example fetching data from a database, etc....
+     
   }
 
 
