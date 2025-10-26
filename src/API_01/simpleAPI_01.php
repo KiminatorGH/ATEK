@@ -24,6 +24,7 @@ Revision: ....
 
 #include "$_SERVER['DOCUMENT_ROOT']/libraries/php/apiUtilitie.php";
 
+$dataObject=new stdClass();
 $httpCode=200;                                                             // Default code to OK
 // Get userId and userSecret from calling POST //
 $postData=getFromPost(array("userId", "userSecret"));
@@ -39,7 +40,11 @@ else                                                                       // Go
      }
   /* This section should contain codes to get data specific to this API
      ... example fetching data from a database, etc....
-     
+     the end result should be an object will all the fields specific to this API.
+  */
+  // Update $dataObjet accordingly to the data obtained //
   }
 
+$dataObjet->httpCode=$httpCode;
+return formatAPIOutput($dataObject);
 
