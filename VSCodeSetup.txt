@@ -1,1 +1,19 @@
+VS Code environmental settings to automatically insert section of file header.
+
+1)	Invoke EXTENSIONS = Ctrl+Shift+X
+2)	Search for headercraft
+3)	Install headercraft
+4)	Restart VS Code
+5)	Invoke settings = Ctrl+,
+6)	Add to settings.json the following:
+    "headerCraft.insertDelay": 500,
+    "headerCraft.customTemplate": {
+        ".js": "/*\nDescription: ...\n\nParameters: ...\n\nReturns: ...\n\nUsage: ...\n\nAuthor: ...\nDate: ${date}\nReviewed by: ...\nReview date: ...\nApproved by: ...\nApprove date: ...\n*/\n\n",
+        ".php": "/*\nDescription: ...\n\nParameters: ...\n\nReturns: ...\n\nUsage: ...\n\nAuthor: ...\nDate: ${date}\nReviewed by: ...\nReview date: ...\nApproved by: ...\nApprove date: ...\n*/\n\n",
+        ".cpp": "/*\nDescription: ...\n\nParameters: ...\n\nReturns: ...\n\nUsage: ...\n\nAuthor: ...\nDate: ${date}\nReviewed by: ...\nReview date: ...\nApproved by: ...\nApprove date: ...\n*/\n\n",
+        ".py": "'''\nDescription: ...\n\nParameters: ...\n\nReturns: ...\n\nUsage: ...\n\nAuthor: ...\nDate: ${date}\nReviewed by: ...\nReview date: ...\nApproved by: ...\nApprove date: ...\n'''\n\n"
+        },
+
+7)	Save and restart VS Code.
+8)	When creating a new file with .js, .php, .cpp, or .py the header will automatically be added to the file.
 
