@@ -1,4 +1,6 @@
 VS Code environmental settings to automatically insert section of file header.
+==============================================================================
+Purpose: Automatically put in the header that is required for pratical reasons, and for compliancy with bookkeeping compliancy.
 
 1)	Invoke EXTENSIONS = Ctrl+Shift+X
 2)	Search for headercraft
@@ -17,3 +19,12 @@ VS Code environmental settings to automatically insert section of file header.
 7)	Save and restart VS Code.
 8)	When creating a new file with .js, .php, .cpp, or .py the header will automatically be added to the file.
 
+Install Github Copilot in VS Code
+=================================
+Purpose: Assist programmer in writing "simple" codes and providing guideline for proper coding.
+    1) Follow the instruction in VS Code in EXTENSIONS ....
+
+Install Github Repositories extension in VS Code
+================================================
+Purpose: Using online repository (in this case Github) enabling virtual collaboration, etc...
+    1) Follow the instruction in VS Code in EXTENSIONS ....
