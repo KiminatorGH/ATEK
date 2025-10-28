@@ -2,7 +2,9 @@ Guidlines:
 
 Each project MUST contain modular functions.
   1) In general, the main program acts like an conductor of an orchistra.  It calls individual function (module) to perform a specific task.
-  2) Each function is a simple module which requires a certains inputs (parameters) and at the end of its execution provides a set of outputs (returns).
+     Within itself, the main program is sub-divided into sections (blocks), each block are interdependent and can be executived in parallel (async) or
+     sequentially (sync). This enables tasks management, and faster development of the project.
+  3) Each function is a simple module which requires a certains inputs (parameters) and at the end of its execution provides a set of outputs (returns).
 
 This structure enables
   a) resolution of complex problem by segmenting it into simple tasks
